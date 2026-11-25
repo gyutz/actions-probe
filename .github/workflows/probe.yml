@@ -2,7 +2,6 @@ name: probe
 on: workflow_dispatch
 jobs:
   hello:
-    runs-on: macos-14
+    runs-on: macos-13
     steps:
-      - run: xcodebuild -version
-      - run: xcrun --sdk iphoneos --show-sdk-path
+      - run: sw_vers
